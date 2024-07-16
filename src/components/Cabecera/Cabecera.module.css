@@ -1,0 +1,70 @@
+.cabecera {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark-grey);
+    border-bottom: 4px solid var(--blue, #2271D1);
+    box-shadow: 0 -5px 29px 0 #2271D1B2;
+    padding: 15px;
+
+    @media (max-width: 1200px) {
+        height: auto;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.logoContainer {
+    width: 168px;
+    height: 40px;
+    margin: 15px 0 15px 25px;
+
+    @media (max-width: 1200px) {
+        margin: 15px 0;
+    }
+}
+
+.cabecera img {
+    align-items: flex-start;
+}
+
+.buttonHome,
+.buttonNuevoVideo {
+    width: 180px;
+    height: 54px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 24px;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.5s ease-out;
+    margin-bottom: 15px;
+
+    @media (max-width: 1200px) {
+        margin-bottom: 15px;
+    }
+}
+
+.buttonHome {
+    border: 1px solid var(--color-button-home);
+    color: var(--color-button-home);
+    box-shadow: inset 0 5px 15px 0 var(--color-button-home);
+}
+
+.buttonHome:hover,
+.buttonNuevoVideo:hover {
+    transform: scale(1.1);
+}
+
+.buttonNuevoVideo {
+    border: 1px solid var(--color-button-nuevoVideo);
+    color: var(--color-button-nuevoVideo);
+    box-shadow: inset 0 5px 15px 0 var(--color-button-nuevoVideo);
+}
